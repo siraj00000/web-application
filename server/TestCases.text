@@ -1,0 +1,45 @@
+-----------------------------
+ LABELLING SYSTEM TEST CASES 
+-----------------------------
+
+USER: 
+(ADMIN) -> (Super, Company, Manufacturer)
+
+SUPER ADMIN:
+#start
+
+@test case 01 (auth)
+Query -> match role jump to respective dashboard 
+
+@subtest case 001 (persist auth)
+Query -> must store token and persist user
+Query -> user must have reset password functionality
+Query -> email must send to user email address in case he wanted to reset password
+
+#end
+
+SUPER ADMIN DASHBOARD:
+(OPTIONS) -> {Admin (CRUD), Category (CRUD), Sub-Category (CRUD), Brand(CRUD), Logout (remove user)}
+
+#start
+@test case 02
+Query -> dashboard must have above mentioned button inside sidebar
+
+@subtest case 002 (ADMIN CRUD)
+(Insert)
+Query -> don't proceed ahead until Category is empty
+Query -> if Category has data then show the Company and Manufacturer's Admin list
+Query -> must jump to add Company admin credential after clicking at button (+ company admin)  
+Query -> don't allow to create manufacturer until Company is empty
+Query -> must jump to add Manufacturer admin credential after clicking at button (+ manufacturer admin)  
+Query -> set role accoding to the user type
+Query -> company insert form must have all Category 
+Query -> One Category can be select
+
+(Edit)
+Query -> jump to edit screen with the company/manufacturer unique id
+Query -> all fields must have previous data 
+Query -> if manufacturer's email updates then it should update in the user's manufacturer email 
+
+(Delete)
+Query -> if company/manufacturer's email deletes then it should delete in the user's company/manufacturer email

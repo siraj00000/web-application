@@ -1,0 +1,4 @@
+Manufacturer_Email,Manufacturer,Company_Id,Company_Name,Pincode,Registered_Address,Phone_One,Phone_Two,Manufacturer_Active_Status,CreatedAt
+dc@manu.com,dc manu,62fa4fa0e839b822d5b7fd9b,ABC Company,121323,-,-,-,true,Mon Aug 15 2022 18:53:10 GMT+0500 (Pakistan Standard Time)
+xz@manu.com,XZ Manu,62fa480c45f2dad5bc299c04,Softcare,123312,-,-,-,-,Mon Aug 15 2022 18:37:48 GMT+0500 (Pakistan Standard Time)
+siraj@manu.com,ABC Manu,62fa480c45f2dad5bc299c04,Softcare,123456,-,-,-,-,Mon Aug 15 2022 18:23:34 GMT+0500 (Pakistan Standard Time)
