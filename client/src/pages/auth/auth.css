@@ -1,0 +1,126 @@
+:root {
+  --primary: #583e81;
+  --light: #eee;
+}
+
+main {
+  width: 100%;
+  background: #fff;
+  padding: 5% 0;
+}
+
+.auth-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 0 0 20px 12px var(--light);
+  border-radius: 8px;
+}
+
+.auth-bg-img {
+  background: url("../../assets/auth/auth.png") no-repeat center center;
+  background-size: cover;
+  width: 50%;
+  min-height: 500px;
+  border-radius: 8px;
+}
+
+.auth-form-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  position: relative;
+}
+
+form h1 {
+  color: var(--primary);
+  text-align: center;
+  margin: 2% 0 3%;
+  font-size: 30px;
+}
+
+form input:not(input[type="file"]),
+select,
+textarea {
+  height: 50px;
+  background: var(--light);
+  border-radius: 8px;
+  margin: 5px 0;
+  border-width: 0;
+  padding: 10px 20px;
+}
+
+select {
+  appearance: none;
+}
+
+form label {
+  color: var(--primary);
+  font-size: 12px;
+  margin-top: 2%;
+}
+
+form button {
+  height: 50px;
+  background: var(--primary);
+  border-radius: 8px;
+  border-width: 0;
+  margin: 5% 0;
+  padding: 10px 20px;
+
+  /* Button text */
+  color: var(--light);
+  cursor: pointer;
+}
+
+.auth__link {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 15px;
+  }
+
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-bg-img {
+    width: 100%;
+    min-height: 300px;
+    z-index: 1;
+  }
+
+  .auth-form-container {
+    background: #fff;
+    width: 100%;
+    padding: 2%;
+    margin-top: -50px;
+    z-index: 2;
+    border-radius: 8px;
+  }
+}
+
+/* -------------- forget password---------------- */
+.forget_password {
+  width: 40%;
+  margin-top: 5%;
+}
+
+.forget_password_form {
+  width: 100%;
+}
+
+.login_link {
+  position: absolute;
+  right: 20px;
+}

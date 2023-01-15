@@ -1,0 +1,23 @@
+.feature_list{
+    display: none;
+}
+
+.feature:focus ~ .feature_list{
+    display: block;
+}
+
+.feature_list{
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 1em 2%;
+}
+
+.feature_list_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,88 @@
+.--form-layout {
+  width: 100%;
+  max-width: 800px;
+  margin: 5% auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* For only report error form */
+.--report-form {
+  max-width: 500px;
+}
+.--report-form div {
+  width: 100% !important;
+}
+
+.--form-layout h1 {
+  width: 100%;
+  font: 40px/48px;
+}
+
+.--form-layout div {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.--form-layout label {
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+}
+
+.--form-layout input {
+  border: 1px solid transparent;
+  background: rgb(235, 235, 235);
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.--form-layout button:not(.-resend-otp-btn ) {
+  width: 100%;
+  background: #2987c2ff;
+  height: 50px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin: 0;
+}
+
+.--form-layout .-resend-otp-btn {
+  width: 100%;
+  background: transparent;
+  color: #2987c2ff;
+  border: none;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.--form-layout p{
+  font: 13px/18px 'roboto';
+  color: #000;
+}
+
+.-w-full {
+  width: 100% !important;
+}
+
+.-w-half {
+  width: 400px !important;
+}
+
+.-w-half div {
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .--form-layout {
+    padding: 5%;
+  }
+  .--form-layout div,
+  .-w-half {
+    width: 100% !important;
+  }
+}

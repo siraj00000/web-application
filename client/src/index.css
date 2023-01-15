@@ -1,13 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --primary_color: #583e81;
+}
+
+.error_alert {
+  position: absolute;
+  bottom: 15px;
+  right: 10%;
+  width: 80%;
+  z-index: 1111;
+}
+
+.direction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.direction-row {
+  display: flex;
+  align-items: center;
+}
+
+.direction-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.direction-corner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap-container {
+  flex-wrap: wrap;
+}
+
+.margin-vertical {
+  margin: 2% 0;
+}
+
+.splash-styling1 {
+  width: 100%;
+  height: 50vh;
+}
+
+.width-100per {
+  width: 100% !important;
+}
+
+.width-80per {
+  width: 80%;
+}
+
+.width-20per {
+  width: 20%;
+}
+
+.margin-0per {
+  margin: 0% !important;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.w-60per {
+  width: 60%;
+}
+
+.w-40per {
+  width: 40%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
 }

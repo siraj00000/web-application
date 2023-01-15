@@ -1,0 +1,118 @@
+:root {
+  --primary_color: #583e81;
+  --primary_light: #eee;
+  --primary_dark: #000;
+}
+
+.ca_container {
+  margin: 2% 0;
+}
+.company_admin_title_and_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Company admin form */
+
+.form-sec {
+  width: 70%;
+  padding: 0;
+}
+
+.company_admin_form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.company_admin_form_field {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  position: relative;
+}
+
+
+.brand-checkbox {
+  display: flex;
+  flex-direction: row;  
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 5% 20px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.sub-catory-list_not_seleted {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.sub-category-chips {
+  background: var(--primary_light);
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 4pc;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+._selected {
+  background: var(--primary_color);
+  color: var(--primary_light);
+}
+
+.sub___cat {
+  padding-right: 40px !important;
+}
+
+.full_width_cont {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.addlist__icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+}
+
+.back-icon {
+  display: "flex";
+  align-items: "center";
+  cursor: "pointer";
+}
+
+/* Manufacturer */
+.company_list {
+  padding: 10px 0;
+}
+
+.filter-icon{
+  position: absolute;
+  bottom: 18px;
+  right: 10px;
+  color: var(--primary_dark);
+}
+
+.manufacturer_company_name__dropdown{
+  width: 100% !important;
+  background: #000;
+}

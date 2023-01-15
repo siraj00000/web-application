@@ -1,0 +1,92 @@
+/* Main Container */
+
+:root {
+  --primary_color: #583e81;
+  --light: #eee;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 300px;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+  border-radius: 8px;
+}
+
+/* Video */
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+/* Controls */
+.controlsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  z-index: 20;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
+.controls {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.controlsIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: var(--light);
+}
+
+.controlsIcon--small {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: var(--light);
+}
+
+/* The time controls section */
+
+.timecontrols {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+
+.time_progressbarContainer {
+  background-color: gray;
+  border-radius: 15px;
+  width: 90%;
+  height: 5px;
+  z-index: 30;
+  position: relative;
+  margin: 0 3px;
+}
+
+.time_progressBar {
+  border-radius: 15px;
+  background-color: var(--primary_color);
+  height: 100%;
+}
+
+.controlsTime {
+  color: white;
+  font-size: 12px;
+}

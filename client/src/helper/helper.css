@@ -1,0 +1,15 @@
+.helper-inputbox {
+  height: 40px;
+  display: grid;
+}
+.helper-inputbox input{
+    border: none;
+    background: #eee;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.dialog-box{
+    width: 300px;
+}

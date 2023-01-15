@@ -1,0 +1,43 @@
+:root {
+  --primary_color: #583e81;
+  --primary_light: #eee;
+}
+
+.barCont {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary_color);
+  border-radius: 4px;
+  background: var(--primary_color);
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.barCont input {
+  border: none;
+  background: var(--primary_color);
+  color: var(--primary_light);
+  font-style: italic;
+  width: 0;
+}
+
+.barCont input::placeholder {
+  color: var(--primary_light);
+}
+
+.barCont:hover input{
+  width: 150px;
+  margin-left: .4em;
+}
+
+.barCont input[type="search"]::-webkit-search-cancel-button{
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url('../../assets/images/cancel.png') no-repeat 50% 50%;
+  background-size: contain;
+  cursor: pointer;
+}

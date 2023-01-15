@@ -1,0 +1,143 @@
+/* Dialog box */
+.dialog-box {
+  min-width: 300px;
+  height: 150px;
+  padding: 0 22px;
+}
+
+.success-msg {
+  color: green;
+  line-height: 20px;
+}
+
+.error-msg {
+  color: red;
+  line-height: 20px;
+}
+
+/* ------------- */
+
+/* home-card */
+
+.home-card {
+  flex: 1;
+  text-align: center;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 25px 6px rgba(227, 224, 227, 0.79);
+  -moz-box-shadow: 0px 0px 25px 6px rgba(227, 224, 227, 0.79);
+  box-shadow: 0px 0px 25px 6px rgba(227, 224, 227, 0.79);
+}
+
+.home-card > h4 {
+  margin: 15px 0 0 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.home-card > p {
+  padding: 0 8%;
+  margin: 5px 0 -50px 0;
+  font-size: 1rem;
+}
+
+.home-card > img {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  height: 55%;
+}
+
+@media (max-width: 1200px) {
+  .home-card {
+    padding-bottom: 30px;
+  }
+
+  .home-card > p {
+    padding: 3%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-card {
+    margin-bottom: 40px;
+    width: 90%;
+  }
+
+  .home-card > p {
+    padding: 5% 6% 40px;
+    font-size: 1rem;
+    padding-bottom: 40px;
+  }
+}
+
+/* home-bottom-card */
+
+.home-bottom-card {
+  position: relative;
+  border-radius: 12px;
+  width: 330px;
+  padding: 2%;
+}
+
+.home-bottom-card > p:nth-child(2) {
+  font-weight: 500;
+}
+
+.home-bottom-card > p:nth-child(2),
+.home-bottom-card > p:nth-child(4) {
+  color: #9095a1ff;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.home-bottom-card > p:nth-child(3) {
+  color: #2987c2ff;
+  font-size: 2rem;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .home-bottom-card {
+    width: 240px;
+  }
+
+  .home-bottom-card > p:nth-child(2),
+  .home-bottom-card > p:nth-child(4) {
+    font-size: 0.85rem;
+  }
+
+  .home-bottom-card > p:nth-child(3) {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-bottom-card {
+    padding: 5%;
+    width: auto;
+  }
+
+  .home-bottom-card > p:nth-child(2),
+  .home-bottom-card > p:nth-child(4) {
+    font-size: 1rem;
+  }
+
+  .home-bottom-card > p:nth-child(3) {
+    font-size: 2rem;
+    margin: 5px 0;
+  }
+}
+
+/* carouselComp */
+
+@media (max-width: 768px) {
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: none;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+}
