@@ -4,7 +4,7 @@ import API from "../../API";
 export const insertBrand = async (token, detail) => {
     return new Promise(async (resolve, reject) => {
         try {
-            const response = API.post("http://52.40.177.153/api/insert-brand", detail, {
+            const response = API.post("http://54.213.140.206/api/insert-brand", detail, {
                 headers: {
                     'Content-Type': "multipart/form-data",
                     "Authorization": `Bearer ${token}`
@@ -57,7 +57,7 @@ export const updateImagesIntoDB = async (id, token, public_id) => {
 export const uploadBrandImageAndVideo = async (token, detail) => {
     return new Promise(async (resolve, reject) => {
         try {
-            const response = API.post("http://52.40.177.153/api/upload", detail, {
+            const response = API.post("http://54.213.140.206/api/upload", detail, {
                 headers: {
                     'Content-Type': "multipart/form-data",
                     "Authorization": `Bearer ${token}`

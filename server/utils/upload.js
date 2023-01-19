@@ -92,8 +92,8 @@ const uploadVideo = (video, folderName) => {
                     { width: 300, height: 300 },
                     { width: 160, height: 100, gravity: "south" }],
                 eager_async: true,
-                eager_notification_url: "https://52.40.177.153/brands",
-                notification_url: "https://52.40.177.153/brands"
+                eager_notification_url: "https://54.213.140.206/brands",
+                notification_url: "https://54.213.140.206/brands"
             }, async (err, result) => {
                 if (err) reject(err);
                 removeTmp(video.tempFilePath);

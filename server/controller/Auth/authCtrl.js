@@ -46,7 +46,7 @@ const userAuthCtrl = {
 
             await user.save();
 
-            const resetUrl = `http://52.40.177.153/ls-admin/passwordreset/${resetToken}`;
+            const resetUrl = `http://54.213.140.206/ls-admin/passwordreset/${resetToken}`;
 
             const message = `
                 <h1>You have requested a password reset</h1>
