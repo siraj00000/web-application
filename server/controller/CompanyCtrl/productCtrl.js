@@ -152,7 +152,7 @@ const productCtrl = {
     },
     updateProduct: async (req, res, next) => {
         try {
-            res.set("Access-Control-Allow-Origin", "http://54.213.140.206");
+            res.set("Access-Control-Allow-Origin", "https://52.36.197.217/");
 
             //? Parse body data  
             let body = JSON.parse(req.body.reqBody);
